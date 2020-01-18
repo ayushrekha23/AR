@@ -6,37 +6,49 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/global.css">
 
-    <title>Login</title>
+    <title>Login | UserConnect</title>
   </head>
-  <body class="background">
+  <body class="background" background="\images\login\login.jpg">
     <div class="container-xl">
-        <div class="row justify-content-end">
-          <div class="col-sm-4 col-style">
-            <div class="form-container">
-            <form>
-              <div class="form-group">
-                <label for="uname">Username:</label>
-                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-              </div>
-              <div class="form-group">
-                <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-              </div>
-              <div class="form-group form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
-                  <div class="valid-feedback">Valid.</div>
-                  <div class="invalid-feedback">Check this checkbox to continue.</div>
-                </label>
-              </div>
-              <div class="align-items-center">
-                <button type="submit" class="btn btn-primary btn-block">Submit</button>
-              </div>
+      <div class="row justify-content-center" style="margin-top:40px;">
+      <img src="\images\connect.png" alt="logo" width="80"  height="80" style="margin-left:-20px;">
+      <h3 class="text-white" style="padding-top:25px; padding-left:14px;">USERCONNECT</h3>
+      </div>
+      <div class="row justify-content-center">
+        <small class="text-white">UserConnect helps you connect and share with the people in your life.</small>
+      </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-style">
+              <div class="form-container">
+              <form>
+                <div class="row justify-content-center" style="margin-bottom:20px;">
+                  <h3>Log In to your Account</h3>
+                </div>
+                <div class="form-group">
+                  <!-- <label for="uname">Username:</label> -->
+                  <input type="text" class="form-control" id="uname" placeholder="Email" name="uname">
+                </div>
+                <div class="form-group">
+                  <!-- <label for="pwd">Password:</label> -->
+                  <input type="password" class="form-control" id="pwd" placeholder="Password" name="pwd">
+                </div>
+                <div class="row justify-content-end">
+                  <a href="#" style="font-size:12px;"><span>Forgot Password?<span></a>
+                </div>
+                <div class="align-items-center" style="margin-top:30px;">
+                  <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                </div>
+                <div class="row justify-content-center" style="margin-top:30px;">
+                  <span class="text-muted">Need an Account?</span>&nbsp;
+                  <a href="#"><span>Sign Up</span></a>
+                </div>
             </form>
+          </div>
+          <div class="row justify-content-center" style="margin-top:20px; font-size:10px;">
+
+              <span class="text-white spacing">Terms of use
+                &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;Help
+                &nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;Privacy Policy</span>
           </div>
         </div>
       </div>
