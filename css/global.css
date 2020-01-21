@@ -1,6 +1,6 @@
 .background {
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat
 }
 
@@ -22,4 +22,20 @@ h3 {
 
 .spacing{
   padding-right: 10px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.nav-hight {
+  height: 35px;
+}
+
+.nav-icon-style {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 3px;
+  border:solid 1px white;
 }
