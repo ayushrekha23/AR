@@ -1,6 +1,6 @@
 .background {
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat
 }
 
@@ -29,13 +29,121 @@ h3 {
   border-radius: 0;
 }
 
-.nav-hight {
-  height: 35px;
+.nav-height {
+  width: 50%
 }
 
 .nav-icon-style {
   font-size: 12px;
-  padding: 4px;
+  padding: 8px;
   border-radius: 3px;
-  border:solid 1px white;
+  font-weight: bold;
 }
+
+.nav-icon-style:hover {
+  background-color: #006dbf;
+}
+
+form > input.search-style {
+  height:24px;
+  font-size:12px;
+}
+
+.nav-icon-style-dropdown {
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+
+.nav-icon-style-dropdown:hover {
+  background-color: #006dbf;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .search-style, .responce {
+    display:none;
+  }
+  .dropdown-style {
+    font-size: 12px;
+    position: relative;
+    left: -92px;
+  }
+  .search-style-response {
+    width: 130px;
+    height: 25px;
+    font-size: 11px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+  .search-icon-style{
+    position: relative;
+    top: -26px;
+    left: 5px;
+  }
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search-style {
+    width:48%;
+  }
+  .dropdown-style {
+    font-size: 12px;
+    position: absolute;
+    left: -40px;
+  }
+  .search-style-response {
+    display: none;
+  }
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .search-style {
+    width:48%;
+  }
+  .dropdown-style {
+    font-size: 12px;
+    position: absolute;
+    left: -40px;
+  }
+  .search-style-response {
+    display: none;
+  }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .search-style {
+    width:48%;
+  }
+  .dropdown-style {
+    font-size: 12px;
+    position: absolute;
+    left: -40px;
+  }
+  .search-style-response {
+    display: none;
+  }
+ }

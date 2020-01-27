@@ -16,21 +16,31 @@
    </script>
  </head>
  <body>
-   <nav class="navbar navbar-expand-lg navbar-light bg-primary nav-hight">
+   <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
      <a class="navbar-brand" href="#">
     <img src="images\connect-white.png" width="30" height="30" class="d-inline-block align-top" alt=""/>
      </a>
 
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+     <form class="form-inline search-style">
+      <input class="form-control mr-sm-2 search-style" type="search" placeholder="Search" aria-label="Search" style="width:40%">
+      <div class="btn" style="position:relative; left:-50px;">
+        <a href="#" onclick="searchresult();">
+          <i class="fas fa-search"></i>
+          </a>
+      </div>
+      <!-- <button class="btn btn-outline-light my-2 my-sm-0 image-btn btn-img" type="submit" style="height:30px;"></button> -->
+    </form>
+
+     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+     </button> -->
+     <div class="navbar navbar-expand ml-auto">
        <ul class="navbar-nav">
          <li class="nav-item active">
            <a class="nav-link" href="#">
              <span class="text-light nav-icon-style">
                <i class="fas fa-user"></i>
-               <span>Profile</span>
+               <span class="responce">Profile</span>
              </span>
            </a>
          </li>
@@ -38,7 +48,7 @@
            <a class="nav-link" href="#">
              <span class="text nav-icon-style">
              <i class="fas fa-comment"></i>
-            <span>Message</span>
+            <span class="responce">Message</span>
            </span>
          </a>
          </li>
@@ -46,15 +56,24 @@
            <a class="nav-link" href="#">
              <span class="text nav-icon-style">
                <i class="fab fa-connectdevelop"></i>
-               <span>Connect User</span>
+               <span class="responce">Connect User</span>
              </span>
            </a>
          </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             User Name
+         <li class="nav-item dropdown ">
+           <a class="nav-link dropdown-toggle nav-icon-style-dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <span class="text">
+               <i class="fas fa-user-circle"></i>
+            <span class="responce">User Name</span>
+            </span>
            </a>
-           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+           <div class="dropdown-menu dropdown-style" aria-labelledby="navbarDropdownMenuLink">
+             <form class="dropdown-item search-style-response ">
+              <input class="form-control mr-sm-2 search-style-response" type="search" placeholder="Search" aria-label="Search">
+                <a href="#" class="search-icon-style" onclick="searchresult();">
+                  <i class="fas fa-search"></i>
+                  </a>
+             </form>
              <a class="dropdown-item" href="#">
                <i class="fas fa-user-cog"></i>
                <span>Setting</span>
@@ -67,17 +86,12 @@
            </div>
          </li>
        </ul>
+
+
+
      </div>
 
-     <form class="form-inline" style="width:26%;">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:68%; height:24px; font-size:12px;">
-      <div class="btn" style="position:relative; left:-50px;">
-        <a href="#" onclick="searchresult();">
-          <i class="fas fa-search"></i>
-          </a>
-      </div>
-      <!-- <button class="btn btn-outline-light my-2 my-sm-0 image-btn btn-img" type="submit" style="height:30px;"></button> -->
-    </form>
+
 
    </nav>
 
