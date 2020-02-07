@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <title>Update Profile | UserConnect</title>
+    <script>
+    // function loadFile(event) {
+    //   var reader = new FileReader();
+    //   reader.onload = function(){
+    //     var output = document.getElementById('output');
+    //     output.src = reader.result;
+    //   };
+    //   reader.readAsDataURL(event.target.files[0]);
+    // }
+
+    $(document).ready(function() {
+      var readURL = function(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+              reader.onload = function (e) {
+                  $('.profile-pic').attr('src', e.target.result);
+              }
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+
+
+      $(".file-upload").on('change', function(){
+          readURL(this);
+      });
+
+      $(".upload-button").on('click', function() {
+         $(".file-upload").click();
+      });
+    });
+
+    </script>
+  </head>
+  <body class="background" style="background-color:rgba(242,243,244,1);">
+    <div class="container-xl col-style">
+    <div class="form-container">
+      <form class="" method="post">
+        <div class="row justify-content-right">
+          <div class="form-group">
+            <div class="justify-content-center">
+              <div class="circle">
+                <img class="profile-pic" src="">
+                <Small class="upload-text">Upload Profile Picture</small>
+              </div>
+              <div class="p-image">
+                <i class="fa fa-camera upload-button"></i>
+                 <input class="file-upload" type="file" accept="image/*"/>
+              </div>
+           </div>
+         </div>
+        </div>
+      </form>
+      </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/603f597a3e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

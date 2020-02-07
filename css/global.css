@@ -61,12 +61,92 @@ form > input.search-style {
   background-color: #006dbf;
 }
 
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
 
+.cover-style {
+  width: 100%;
+}
 
+.style-body {
+  position: relative;
+  top: -80px;
+  background: rgb(255,255,255);
+}
 
+.profile-style {
+  position: relative;
+  top: -50px
+}
 
+.visibility {
+  display: none;
+}
 
+a, a:hover {
+  text-decoration: none;
+}
 
+.upload-text {
+  position: relative;
+  top: 63px;
+  left: 8px;
+  cursor: default;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+}
+
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+}
+
+.file-upload {
+    display: none;
+}
+
+.circle {
+    border-radius: 1000px !important;
+    overflow: hidden;
+    width: 163px;
+    height: 163px;
+    border: 8px solid rgba(242, 243, 244, 1);
+    background: rgb(242,243,244);
+    box-shadow: inset 0px 1px 80px 1px rgba(0,0,0,0.5);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.p-image {
+  position: relative;
+  top: -44px;
+  left: 134px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.p-image:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+.upload-button {
+  font-size: 1.2em;
+}
+
+.upload-button:hover {
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  color: #999;
+}
 
 
 
