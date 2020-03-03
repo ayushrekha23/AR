@@ -1,0 +1,11 @@
+package com.userConnect.repository;
+
+public interface SQLQuery {
+
+	public String INSERT_USER = "INSERT INTO UC_USER_REGISTRATION (REGISTER_NO, F_NAME, L_NAME, USERNAME, PASS, CREATED_ON, CREATED_BY, "+
+	"VERIFIED_URL, VERIFIED) VALUES (?, ?, ?, ?, ?, ? ,?, ?, ? )";
+	
+	public String REGISTER_SEQ = "SELECT REGISTER_SEQ.NEXTVAL FROM DUAL";
+	
+	public String USER_SELECT = "SELECT USERNAME FROM UC_USER_REGISTRATION WHERE DELETED_FLAG <> 'Y' AND USERNAME = ?";
+}
